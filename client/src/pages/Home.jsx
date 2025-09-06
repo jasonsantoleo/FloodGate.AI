@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Bell, Camera, RefreshCw, Droplets, MapPin, AlertTriangle, Users, TrendingUp, Clock } from "lucide-react";
-import { Link } from "react-router-dom";
+
 export default function HomeDashboard() {
   const [currentTime, setCurrentTime] = useState(new Date());
 
@@ -66,12 +66,10 @@ export default function HomeDashboard() {
           
           {/* Navigation */}
           <nav className="hidden md:flex space-x-6">
-            <Link to="/user/home" className="text-gray-600 hover:text-blue-800 font-medium">Home</Link>
-            <Link to="/user/map" className="text-gray-600 hover:text-blue-800 font-medium">Map</Link>
-            <Link to="/user/alert" className="text-gray-600 hover:text-blue-800 font-medium">Alerts</Link>
-            <Link to="/user/reports" className="text-gray-600 hover:text-blue-800 font-medium">Reports</Link>
-            <Link to='/user/safety' className="text-gray-600 hover:text-blue-800 font-medium">Evacuation</Link>
-            <Link to='/admin' className="text-gray-600 hover:text-blue-800 font-medium">Admin</Link>
+            <a href="#" className="text-blue-800 font-medium border-b-2 border-blue-800 pb-1">Home</a>
+            <a href="#" className="text-gray-600 hover:text-blue-800 font-medium">Map</a>
+            <a href="#" className="text-gray-600 hover:text-blue-800 font-medium">Alerts</a>
+            <a href="#" className="text-gray-600 hover:text-blue-800 font-medium">Reports</a>
           </nav>
         </div>
 

@@ -6,6 +6,7 @@ import AlertsPanel from './pages/Alert'
 import CommunityReportsPage from './pages/report'
 import EvacuationShelterPage from './pages/saftyRoutes'
 import AdminDashboard from './pages/Admin'
+import HomeDashboard from './pages/Home'
 
 function App() {
 
@@ -30,7 +31,7 @@ function App() {
         />
         <Route
         path='/user/home'
-        element={<CommunityReportsPage/>}
+        element={<HomeDashboard/>}
         />
         <Route
         path='/user/safety'
